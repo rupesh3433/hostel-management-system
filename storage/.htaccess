@@ -1,0 +1,6 @@
+# storage/.htaccess
+Deny from all
+<FilesMatch "\.(php)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>

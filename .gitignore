@@ -1,0 +1,165 @@
+# Hostel Management System .gitignore
+
+# =============================================
+# ENVIRONMENT & CONFIGURATION
+# =============================================
+.env
+.env.local
+.env.*.local
+.env.production
+.env.testing
+.env.backup
+.env.example
+config/database.php  # Don't commit database config with credentials
+
+# =============================================
+# DEPENDENCIES
+# =============================================
+/vendor/
+composer.lock
+composer.phar
+/node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# =============================================
+# CACHE & TEMPORARY FILES
+# =============================================
+# Compiled Blade templates (IMPORTANT: DO NOT COMMIT THESE!)
+/storage/views/*.php
+!/storage/views/.gitkeep
+
+# Cache files
+/storage/framework/cache/*
+!/storage/framework/cache/.gitkeep
+
+# Session files
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitkeep
+
+# Logs
+/storage/logs/*
+!/storage/logs/.gitkeep
+
+# PHP cache
+.php_cs.cache
+.phpunit.result.cache
+bootstrap/cache/*
+!bootstrap/cache/.gitkeep
+
+# =============================================
+# UPLOADED FILES & USER CONTENT
+# =============================================
+/storage/app/public/*
+!/storage/app/public/.gitkeep
+/public/uploads/
+/storage/uploads/
+*.sqlite
+database/database.sqlite
+
+# =============================================
+# OPERATING SYSTEM FILES
+# =============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*~
+*.lock
+
+# Windows
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Linux
+*~
+
+# =============================================
+# DEVELOPMENT TOOLS & IDEs
+# =============================================
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+.project
+.settings/
+.netrwhist
+
+# PHPStorm
+.idea/*
+!.idea/codeStyles/
+!.idea/fileTemplates/
+
+# VS Code
+.vscode/*
+!.vscode/settings.json.example
+!.vscode/extensions.json
+
+# =============================================
+# TESTING & DEBUG
+# =============================================
+/coverage/
+*.seed
+*.pid
+*.pid.lock
+*.dmp
+
+# =============================================
+# BUILD ARTIFACTS (if you add build process later)
+# =============================================
+/public/css/*.map
+/public/js/*.map
+/dist/
+/build/
+
+# =============================================
+# DOCKER (if you use Docker)
+# =============================================
+docker-compose.override.yml
+
+# =============================================
+# BACKUP FILES
+# =============================================
+*.backup
+*.bak
+*.old
+*.orig
+
+# =============================================
+# PROJECT SPECIFIC
+# =============================================
+# Session data
+/storage/framework/sessions/*
+
+# Cache data
+/storage/framework/cache/*
+
+# Temporary export files
+/tmp/
+/temp/
+
+# Email testing
+/storage/logs/mail/
+
+# =============================================
+# DO COMMIT THESE (Exceptions to the ignore rules)
+# =============================================
+# Keep these empty directories in git
+!/storage/views/.gitkeep
+!/storage/framework/cache/.gitkeep
+!/storage/framework/sessions/.gitkeep
+!/storage/framework/views/.gitkeep
+!/storage/logs/.gitkeep
+!/storage/app/public/.gitkeep
+!/storage/app/private/.gitkeep
+!/bootstrap/cache/.gitkeep
+!/public/uploads/.gitkeep
